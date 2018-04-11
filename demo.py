@@ -1,2 +1,3 @@
-print("add python ignore test")
-print("add python ignore test1")
+def f1(a,*,b):
+    print(b)
+f1(1,**{'b':1})
