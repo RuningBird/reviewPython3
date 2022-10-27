@@ -1,9 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh 'ls'
+      }
+    }
+
+    stage('2') {
+      steps {
+        sh 'docker --help'
       }
     }
 
